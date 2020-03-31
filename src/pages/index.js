@@ -6,14 +6,11 @@ import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import { graphql } from "gatsby"
 import StyledHero from "../components/StyledHero"
+import FeaturedTours from "../components/Home/FeaturedTours"
 
 export default ({ data }) => (
   <Layout>
-    <StyledHero
-      home="true"
-      img={data.defaultBcg.childImageSharp.fluid}
-      className="styledHeroHome"
-    >
+    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="continue exploring"
         info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolorum perferendis libero."
@@ -25,6 +22,7 @@ export default ({ data }) => (
     </StyledHero>
     <About />
     <Services />
+    <FeaturedTours />
   </Layout>
 )
 
