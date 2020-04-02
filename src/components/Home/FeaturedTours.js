@@ -3,7 +3,6 @@ import Tour from "../Tours/Tour"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "../../css/items.module.css"
-import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const FeaturedTours = () => {

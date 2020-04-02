@@ -3,7 +3,7 @@ import Image from "gatsby-image"
 import styles from "../../css/tour.module.css"
 import { FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 const getImage = graphql`
@@ -49,14 +49,16 @@ const Tour = ({ tour }) => {
   )
 }
 
-Tour.PropTypes = {
-  tour: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    country: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    days: PropTypes.number.isRequired,
-    images: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }),
-}
+//++++ Line 54 shows error, "better" to set required fields in Contentful
+
+// Tour.PropTypes = {
+//   tour: PropTypes.shape({
+//     name: PropTypes.string.isRequired,
+//     country: PropTypes.string.isRequired,
+//     price: PropTypes.number.isRequired,
+//     days: PropTypes.number.isRequired,
+//     images: PropTypes.arrayOf(PropTypes.object).isRequired,
+//   }),
+// }
 
 export default Tour
