@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import StyledHero from "../components/StyledHero"
 import BlogList from "../components/Blog/BlogList"
 
-const blog = ({ data }) => {
+const Blog = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.contactBcg.childImageSharp.fluid} />
@@ -26,4 +26,4 @@ export const query = graphql`
   }
 `
 
-export default blog
+export default Blog
